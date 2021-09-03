@@ -8,7 +8,7 @@ public class TestConnect : MonoBehaviourPunCallbacks
     {
 
         print("Connecting to server.");
-        PhotonNetwork.GameVersion = ;
+        PhotonNetwork.GameVersion = MasterManager.GameSettings.GameVersion;
         PhotonNetwork.ConnectUsingSettings();
         
     }
