@@ -6,7 +6,7 @@ public class GameSettings : ScriptableObject
 {
 
     [SerializeField]
-    private string _gameVersion = "0.0.0";
+    private string _gameVersion = "0.0.1";
 
     public string GameVersion { get { return _gameVersion; } }
     [SerializeField]

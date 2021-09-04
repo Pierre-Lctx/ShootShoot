@@ -34,7 +34,7 @@ namespace Photon.Realtime
     public class AppSettings
     {
         /// <summary>AppId for Realtime or PUN.</summary>
-        public string AppIdRealtime;
+        public string AppIdRealtime = "538003bb-ccca-444c-bc4b-1f0cb0967f72";
         /// <summary>AppId for the Chat Api.</summary>
         public string AppIdChat;
         /// <summary>AppId for use in the Voice Api.</summary>

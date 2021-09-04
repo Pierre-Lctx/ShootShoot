@@ -8,12 +8,13 @@ public class TestConnect : MonoBehaviourPunCallbacks
     {
 
         print("Connecting to server.");
-        PhotonNetwork.GameVersion = ;
+        PhotonNetwork.GameVersion = MasterManager.GameSettings.GameVersion;
+        print("Game Version : " + MasterManager.GameSettings.GameVersion);
         PhotonNetwork.ConnectUsingSettings();
-        
+        print("Fin Start");
     }
 
-    public void OnConnectedToMaster()
+    public override void OnConnectedToMaster()
     {
         print("Connected to server.");
     }
