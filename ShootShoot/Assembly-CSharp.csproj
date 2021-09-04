@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
+    <Compile Include="Assets\Scripts\UI\Rooms\CreateRoom.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\Scripts\Managers (GameSettings)\MasterManager.cs" />
     <Compile Include="Assets\Scripts\Managers (GameSettings)\SingletonScriptableObject.cs" />
@@ -72,7 +73,6 @@
     <Compile Include="Assets\Scripts\Managers (GameSettings)\GameSettings.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Scripts\TestConnect.cs" />
-    <Compile Include="Assets\Scripts\UI\Rooms\CreateRoom.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />

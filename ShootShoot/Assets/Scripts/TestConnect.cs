@@ -8,14 +8,16 @@ public class TestConnect : MonoBehaviourPunCallbacks
     {
 
         print("Connecting to server.");
+        PhotonNetwork.NickName = MasterManager.GameSettings.NickName;
         PhotonNetwork.GameVersion = MasterManager.GameSettings.GameVersion;
         PhotonNetwork.ConnectUsingSettings();
         
     }
 
-    public void OnConnectedToMaster()
+    public override void OnConnectedToMaster()
     {
         print("Connected to server.");
+        print(PhotonNetwork.LocalPlayer.NickName);
     }
 
     public override void OnDisconnected(DisconnectCause cause)
