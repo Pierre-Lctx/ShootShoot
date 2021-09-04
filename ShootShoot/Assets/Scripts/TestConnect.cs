@@ -8,7 +8,7 @@ public class TestConnect : MonoBehaviourPunCallbacks
     {
 
         print("Connecting to server.");
-        PhotonNetwork.GameVersion = ;
+        PhotonNetwork.GameVersion = "0.0.1";
         PhotonNetwork.ConnectUsingSettings();
         
     }
@@ -20,6 +20,6 @@ public class TestConnect : MonoBehaviourPunCallbacks
 
     public override void OnDisconnected(DisconnectCause cause)
     {
-        print("Disconnected from server for reason " + cause.ToString());
+        print("Disconnected from server for reason: " + cause.ToString() + ".");
     }
 }
